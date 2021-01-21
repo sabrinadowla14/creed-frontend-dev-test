@@ -1,73 +1,144 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Headphone-1",
-      "category_id": 2,
-      "description": "Description of the headphone.",
-      "price": 200,
-      "product_img": "image_path",
-      "isAvailable": true,
-      "rating": 4,
-      "reviews": 200,
-      "vendor_name": "seller-3",
-      "warranty": 5
-    },
-    {
-      "id": 2,
-      "name": "Headphone-3",
-      "category_id": 5,
-      "description": "Description of the headphone.",
-      "price": 150,
-      "product_img": "image_path",
-      "isAvailable": true,
-      "rating": 2,
-      "reviews": 120,
-      "vendor_name": "seller-2",
-      "warranty": 2
-    },
-    {
-      "id": 3,
-      "name": "Headphone-3",
-      "category_id": 5,
-      "description": "Description of the headphone.",
-      "price": 300,
-      "product_img": "image_path",
-      "isAvailable": true,
-      "rating": 3,
-      "reviews": 15,
-      "vendor_name": "seller-3",
-      "warranty": 1
-    },
-    {
-      "id": 4,
-      "name": "Headphone-4",
-      "category_id": 6,
-      "description": "Description of the headphone.",
-      "price": 150,
-      "product_img": "image_path",
-      "isAvailable": false,
-      "rating": 4,
-      "reviews": 70,
-      "vendor_name": "seller-4",
-      "warranty": 1
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "categoryName": "Polo Tshirt"
-    },
-    {
-      "id": 1,
-      "categoryName": "Soccer Tshirt"
-    },
-    {
-      "id": 1,
-      "categoryName": "Casual Tshirt"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "podcasts": {
+    "id": 140,
+    "name": "Web Design",
+    "parent_id": 127,
+
+    "podcasts": [
+      {
+        "id": "49b3e8357a644abfa6d45b95b57a5637",
+        "title": "Alexa Stop Podcast",
+        "publisher": "Robert Belgrave & Jim Bowes",
+        "image": "https://cdn-images-1.listennotes.com/podcasts/alexa-stop-podcast-robert-belgrave-jim-bowes-5f2IEtTmaYv-5jn9XD-Irgu.300x300.jpg",
+        "thumbnail": "https://cdn-images-1.listennotes.com/podcasts/alexa-stop-podcast-robert-belgrave-jim-bowes-5f2IEtTmaYv-5jn9XD-Irgu.300x300.jpg",
+        "listennotes_url": "https://www.listennotes.com/c/49b3e8357a644abfa6d45b95b57a5637/",
+        "total_episodes": 26,
+        "explicit_content": false,
+        "description": "Two technology CEOs \u2014 Jim Bowes and Robert Belgrave \u2014 discuss how technology is changing our lives, joined every month by a special guest from the industry. Supported by D/SRUPTION Magazine.",
+        "itunes_id": 1223829037,
+        "rss": "Please upgrade to the PRO plan to see this field",
+        "latest_pub_date_ms": 1577199609000,
+        "earliest_pub_date_ms": 1490960434024,
+        "language": "English",
+        "country": "United Kingdom",
+        "website": "https://anchor.fm/alexa-stop-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "extra": {
+          "twitter_handle": "",
+          "facebook_handle": "",
+          "instagram_handle": "",
+          "wechat_handle": "",
+          "patreon_handle": "",
+          "youtube_url": "",
+          "linkedin_url": "",
+          "spotify_url": "",
+          "google_url": "",
+          "url1": "",
+          "url2": "",
+          "url3": ""
+        },
+        "is_claimed": false,
+        "email": "Please upgrade to the PRO plan to see this field",
+        "type": "episodic",
+        "looking_for": {
+          "sponsors": false,
+          "guests": false,
+          "cohosts": false,
+          "cross_promotion": false
+        },
+        "genre_ids": [140, 67, 127]
+      },
+      {
+        "id": "33bd629683d6413fae3dcc6d434c63a4",
+        "title": "This Week in Tech (MP3)",
+        "publisher": "TWiT",
+        "image": "https://cdn-images-1.listennotes.com/podcasts/this-week-in-tech-mp3-twit-FhH4pxNJ7MD-rOsjyMdh_cW.300x300.jpg",
+        "thumbnail": "https://cdn-images-1.listennotes.com/podcasts/this-week-in-tech-mp3-twit-FhH4pxNJ7MD-rOsjyMdh_cW.300x300.jpg",
+        "listennotes_url": "https://www.listennotes.com/c/33bd629683d6413fae3dcc6d434c63a4/",
+        "total_episodes": 192,
+        "explicit_content": false,
+        "description": "Your first podcast of the week is the last word in tech. Join the top tech pundits in a roundtable discussion of the latest trends in high tech.\n\nRecords live every Sunday at 5:15pm Eastern / 2:15pm Pacific / 21:15 UTC.",
+        "itunes_id": 73329404,
+        "rss": "Please upgrade to the PRO plan to see this field",
+        "latest_pub_date_ms": 1592787156000,
+        "earliest_pub_date_ms": 1476062265000,
+        "language": "English",
+        "country": "United States",
+        "website": "https://twit.tv/shows/this-week-in-tech?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "extra": {
+          "twitter_handle": "",
+          "facebook_handle": "",
+          "instagram_handle": "",
+          "wechat_handle": "",
+          "patreon_handle": "",
+          "youtube_url": "",
+          "linkedin_url": "",
+          "spotify_url": "",
+          "google_url": "",
+          "url1": "",
+          "url2": "",
+          "url3": ""
+        },
+        "is_claimed": true,
+        "email": "Please upgrade to the PRO plan to see this field",
+        "type": "episodic",
+        "looking_for": {
+          "sponsors": false,
+          "guests": false,
+          "cohosts": false,
+          "cross_promotion": false
+        },
+        "genre_ids": [149, 157, 127, 140, 67, 93, 95, 99, 130, 131]
+      },
+      {
+        "id": "64bfb34f7dd243a6a75123ff9158d497",
+        "title": "Design Review",
+        "publisher": "Design Review",
+        "image": "https://cdn-images-1.listennotes.com/podcasts/design-review-design-review-WD4RmBA1os5.300x298.jpg",
+        "thumbnail": "https://cdn-images-1.listennotes.com/podcasts/design-review-design-review-WD4RmBA1os5.300x298.jpg",
+        "listennotes_url": "https://www.listennotes.com/c/64bfb34f7dd243a6a75123ff9158d497/",
+        "total_episodes": 59,
+        "explicit_content": false,
+        "description": "No chit-chat, just focused in-depth discussions about design topics that matter. Jonathan Shariat and Chris Liu are your hosts and bring to the table passion and  years of experience.",
+        "itunes_id": 947753823,
+        "rss": "Please upgrade to the PRO plan to see this field",
+        "latest_pub_date_ms": 1523968203000,
+        "earliest_pub_date_ms": 1412626033000,
+        "language": "English",
+        "country": "United States",
+        "website": "http://soundcloud.com/design-review?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "extra": {
+          "twitter_handle": "",
+          "facebook_handle": "",
+          "instagram_handle": "",
+          "wechat_handle": "",
+          "patreon_handle": "",
+          "youtube_url": "",
+          "linkedin_url": "",
+          "spotify_url": "",
+          "google_url": "",
+          "url1": "",
+          "url2": "",
+          "url3": ""
+        },
+        "is_claimed": false,
+        "email": "Please upgrade to the PRO plan to see this field",
+        "type": "episodic",
+        "looking_for": {
+          "sponsors": false,
+          "guests": false,
+          "cohosts": false,
+          "cross_promotion": false
+        },
+        "genre_ids": [140, 67, 127, 131]
+      }
+    ],
+
+    "total": 45,
+    "has_next": true,
+    "has_previous": false,
+    "page_number": 1,
+    "previous_page_number": 0,
+    "next_page_number": 2,
+    "listennotes_url": "https://www.listennotes.com/best-web-design-podcasts-140/"
   }
 }
