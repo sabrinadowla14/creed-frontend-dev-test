@@ -1,26 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2 mt-4">
-      <h4 class="card-title">
-        <img src="assets/images/circle2.png" />
-      </h4>
-    </div>
-    <div class="col-sm-4 mt-4">
-      <a href="#" *ngFor="let pod of podcasts"
-        ><img src="{{ pod.image }}" class="img" width="150" height="150" />
-      </a>
-    </div>
-    <div class="col-sm-2 mt-4">
-      <h4>
-        <a href="#" class="pod-title" *ngFor="let pod of podcasts">{{
-          pod.title
-        }}</a>
-      </h4>
-    </div>
-    <div class="col-sm-4 mt-4">
-      <p class="card-text pod-desc" *ngFor="let pod of podcasts">
-        {{ pod.description }}
-      </p>
-    </div>
+<div class="row">
+  <div class="col-sm-4 mt-4">
+    <a href="#" *ngFor="let pod of podcasts"
+      ><img src="{{ pod.image }}" class="img" width="150" height="150" />
+    </a>
+  </div>
+  <hr />
+  <div class="col-sm-4 mt-4">
+    <p class="card-text pod-desc" *ngFor="let pod of podcasts">
+      {{ pod.title }} <br />
+      By {{ pod.publisher }}<br /><br /><br /><br /><br /><br />
+    </p>
+  </div>
+  <hr />
+  <div class="col-sm-4 mt-4">
+    <p class="card-text pod-desc" *ngFor="let pod of podcasts">
+      {{ pod.description }}
+    </p>
   </div>
 </div>
+
+<hr />
