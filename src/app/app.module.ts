@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ViewAllPodcastsComponent } from './view-all-podcasts/view-all-podcasts.component';
 import { ViewPodcastsComponent } from './view-podcasts/view-podcasts.component';
 import { LayoutPodcastModule } from './layout-podcast/layout-podcast.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [AppComponent, ViewAllPodcastsComponent, ViewPodcastsComponent],
@@ -13,7 +16,10 @@ import { LayoutPodcastModule } from './layout-podcast/layout-podcast.module';
     BrowserModule,
     AppRoutingModule,
     LayoutPodcastModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

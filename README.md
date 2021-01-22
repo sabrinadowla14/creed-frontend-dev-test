@@ -82,7 +82,9 @@ ng g m podcasts --route podcasts --module app.module
   cd to podcasts folder
 - generate a component called view-all-podcasts
 - ng g c view-podcasts
-- ng g c view-all-podcasts
+- ng g c view-all-podcasts.
+
+I have created a lazy loading module called podcasts.
 
 How to Run:
 
@@ -98,3 +100,17 @@ In the backend:
 
 - npm i -g @angular/cli
 - ng serve
+
+## To make the application responsive using bootstrap go to styles.scss and add
+
+## https://medium.com/@tomastrajan/how-to-build-responsive-layouts-with-bootstrap-4-and-angular-6-cfbb108d797b
+
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+
+OR in angular.json file add
+"styles": [
+"node_modules/bootstrap/dist/css/bootstrap-reboot.css",
+"node_modules/bootstrap/dist/css/bootstrap-grid.css",
+"src/styles.scss"
+]

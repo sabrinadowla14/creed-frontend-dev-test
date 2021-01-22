@@ -1,18 +1,24 @@
-<div class="card">
-  <div class="row">
-    <div class="col-sm-4 mt-4">
-      <a href="#" *ngFor="let pod of podcasts"
-        ><img src="{{ pod.image }}" class="img" width="150" height="150" />
-      </a>
-    </div>
-    <hr />
-    <div class="col-sm-4 mt-4 body-title2">
-      <p class="title2" *ngFor="let pod of podcasts">
-        <strong>{{ pod.title }}</strong> <br />
-        By {{ pod.publisher }} <br /><br /><br />
-        {{ pod.total_episodes }} Episodes <br /><br />
-        <span class="hr"></span>
-        <a href="#"
+<div class="row">
+  <div class="col-md-4 col-sm-12 mt-4">
+    <a href="#" *ngFor="let pod of podcasts"
+      ><img
+        mat-card-image
+        src="{{ pod.image }}"
+        class="img"
+        width="150"
+        height="150"
+      />
+    </a>
+  </div>
+  <hr />
+  <div class="col-md-4 col-sm-12 mt-4 body-title2">
+    <p class="title2" *ngFor="let pod of podcasts">
+      <mat-card-title>{{ pod.title }}</mat-card-title>
+      <mat-card-subtitle>By {{ pod.publisher }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ pod.total_episodes }} Episodes</mat-card-subtitle>
+      <span class="hr"></span>
+      <mat-card-footer
+        >&nbsp;<a href="#"
           ><img
             class="card-text apple"
             src="assets/images/apple.svg"
@@ -26,15 +32,14 @@
         >&nbsp;
         <a href="#"
           ><img class="card-text rss" src="assets/images/rss.svg" />&nbsp;RSS</a
-        >
-      </p>
-    </div>
-    <hr />
-    <div class="col-sm-4 mt-4">
-      <p class="card-text pod-desc" *ngFor="let pod of podcasts">
-        {{ pod.description }}
-      </p>
-    </div>
+        ></mat-card-footer
+      ><br /><br /><br />
+    </p>
+  </div>
+  <hr />
+  <div class="col-md-4 col-sm-12 mt-4">
+    <p class="card-text pod-desc" *ngFor="let pod of podcasts">
+      {{ pod.description }}
+    </p>
   </div>
 </div>
-<br /><br />
