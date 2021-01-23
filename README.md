@@ -114,3 +114,7 @@ OR in angular.json file add
 "node_modules/bootstrap/dist/css/bootstrap-grid.css",
 "src/styles.scss"
 ]
+
+<div class="side-bar-img" *ngFor="let pod of podcasts">
+  <h4><img src="assets/images/circle2.png" /><br /><br /><br /><br /></h4>
+</div>

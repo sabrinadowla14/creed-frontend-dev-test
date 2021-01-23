@@ -8,6 +8,7 @@ import { PodcastsService } from 'src/app/podcasts/podcasts.service';
 })
 export class SidebarComponent implements OnInit {
   podcasts: any = [];
+  counter = 0;
 
   constructor(public podcastsService: PodcastsService) {}
 
@@ -16,5 +17,9 @@ export class SidebarComponent implements OnInit {
       this.podcasts = data.podcasts;
       console.log(data.podcasts);
     });
+  }
+
+  addCounter(e: number) {
+    this.counter += 1;
   }
 }
