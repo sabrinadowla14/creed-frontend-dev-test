@@ -18,18 +18,25 @@ abe-header {
 .containaer {
   background-color: purple;
   text-align: center;
+  font-size: 34px;
+}
+
+.card-text .pod-desc {
+  // margin-top: 40px;
+  margin-bottom: 150px;
 }
 
 .navbar {
   background-color: purple;
   text-align: center;
-  padding-left: 50px;
-  height: 150px;
+  padding-left: 100px;
+  height: 70px;
+  font-size: 34px;
 }
-.pod-title {
+.navbar h1 .pod-title {
   color: white;
   margin-left: 300px;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .content {
@@ -52,7 +59,7 @@ p .title2 {
 .side-bar-img {
   background-image: url("assets/images/circle2.png");
   background-repeat: no-repeat;
-  font-size: 11px;
+  font-size: 18px;
   //padding-left: 70px;
   margin-bottom: 470px;
   padding-bottom: 20px;
@@ -64,13 +71,30 @@ p .title2 {
   padding-bottom: 150px;
 }
 
+@media screen and (min-width: 800px) {
+  .side-bar-img {
+    background-image: url("assets/images/circle2.png");
+    background-repeat: no-repeat;
+    font-size: 18px;
+    //padding-left: 70px;
+    margin-bottom: 470px;
+    padding-bottom: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+  }
+}
+
 .body-title2 {
   margin-bottom: 70px;
   margin-top: 100px;
 }
 
 a .apple {
-  margin-left: 50px;
+  margin-left: 70px;
   font-size: 5px;
   margin-bottom: 150px;
 }
@@ -114,7 +138,38 @@ body {
     background-color: purple;
     text-align: center;
     padding-left: 50px;
-    height: 250px;
+    height: 260px;
+  }
+
+  .navbar .pod-title {
+    color: white;
+    margin-right: 100px;
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    background-color: purple;
+    text-align: center;
+    padding-left: 50px;
+    height: 260px;
+  }
+
+  .navbar .pod-title {
+    color: white;
+    margin-right: 100px;
+    font-size: 34px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    background-color: purple;
+    text-align: center;
+    padding-left: 50px;
+    height: 150px;
+    font-size: 34px;
   }
 
   .pod-title {
@@ -124,7 +179,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .side-bar-img {
     display: none;
   }
