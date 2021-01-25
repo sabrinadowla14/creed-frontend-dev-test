@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { any } from 'prop-types';
 import { PodcastsService } from './podcasts.service';
 import { ActivatedRoute } from '@angular/router';
 
