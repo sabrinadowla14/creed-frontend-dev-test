@@ -118,3 +118,24 @@ OR in angular.json file add
 <div class="side-bar-img" *ngFor="let pod of podcasts">
   <h4><img src="assets/images/circle2.png" /><br /><br /><br /><br /></h4>
 </div>
+
+<div class="side-bar-img">
+  <p *ngIf="podId">
+    {{ addCounter() }}
+  </p>
+</div>
+
+<ul class="side-bar-img" *ngIf="podcasts[0].id; else noContent">
+  <li *ngFor="let pod of podcasts">
+    <a href="#">{{ counter }}</a>
+  </li>
+</ul>
+
+<ng-template #noContent>No matching result...</ng-template>
+https://stackoverflow.com/questions/45300143/click-the-button-and-increase-number-through-component-angular
+
+<div *ngFor="let item of podcasts; let i = index">
+  <div *ngIf="item.id">
+    {{ counter }}
+  </div>
+</div>

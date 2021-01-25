@@ -50,8 +50,18 @@ p .title2 {
 }
 
 .side-bar-img {
-  margin-top: 60px;
-  margin-left: 200px;
+  background-image: url("assets/images/circle2.png");
+  background-repeat: no-repeat;
+  font-size: 11px;
+  //padding-left: 70px;
+  margin-bottom: 470px;
+  padding-bottom: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 150px;
 }
 
 .body-title2 {

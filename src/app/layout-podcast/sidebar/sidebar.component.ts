@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectorRef,
+  AfterViewInit,
+  AfterViewChecked
+} from '@angular/core';
 import { PodcastsService } from 'src/app/podcasts/podcasts.service';
 
 @Component({
@@ -8,18 +14,21 @@ import { PodcastsService } from 'src/app/podcasts/podcasts.service';
 })
 export class SidebarComponent implements OnInit {
   podcasts: any = [];
-  counter = 0;
+  counter: number = 0;
+  podId: boolean = false;
 
-  constructor(public podcastsService: PodcastsService) {}
-
-  ngOnInit(): void {
-    this.podcastsService.getAllPodcasts().subscribe(data => {
-      this.podcasts = data.podcasts;
-      console.log(data.podcasts);
-    });
+  constructor(
+    public podcastsService: PodcastsService,
+    private cdr: ChangeDetectorRef
+  ) {
+    this.counter = this.podcastsService.counter;
   }
 
-  addCounter(e: number) {
-    this.counter += 1;
+  ngOnInit() {
+    this.podcastsService.getAllPodcasts().subscribe(data => {
+      this.podcasts = data.podcasts;
+      console.log('This is from sidebar' + this.podcasts[0].id);
+      this.counter = this.counter + 1;
+    });
   }
 }

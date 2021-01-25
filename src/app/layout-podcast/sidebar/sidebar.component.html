@@ -1,3 +1,5 @@
-<div class="side-bar-img" *ngFor="let pod of podcasts">
-  <h4><img src="assets/images/circle2.png" /><br /><br /><br /><br /></h4>
-</div>
+<h5 *ngIf="podcasts">
+  <p class="side-bar-img" *ngFor="let pod of podcasts; let i = index">
+    {{ i }}
+  </p>
+</h5>

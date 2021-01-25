@@ -8,10 +8,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PodcastsService {
+  counter: number = 0;
   constructor(private httpClient: HttpClient) {}
 
   getAllPodcasts(): Observable<PodcastsComponent> {
     const podcastUrl = 'http://localhost:3000/podcasts';
     return this.httpClient.get<PodcastsComponent>(podcastUrl); // return an observable
+  }
+  addCounter() {
+    this.counter = this.counter + 1;
   }
 }
